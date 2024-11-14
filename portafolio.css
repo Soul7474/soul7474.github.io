@@ -1,0 +1,354 @@
+/* Estilos generales para todos los elementos */
+* {
+    padding: 0%; /* Elimina el padding por defecto */
+    margin: 0%; /* Elimina el margen por defecto */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /* Define la fuente del documento */
+}
+
+/* Estilo para el logo */
+.logo {
+    position: absolute; /* Posiciona el logo de manera absoluta */
+    left: 0; /* Alinea el logo a la izquierda */
+    top: 50%; /* Coloca el logo en el centro verticalmente */
+    transform: translateY(-50%); /* Ajusta el logo para que esté centrado */
+    margin: 0; /* Elimina el margen */
+    padding: 0; /* Elimina el padding */
+    height: 4.3cm; /* Define la altura del logo */
+}
+
+/* Estilo para el cuerpo del documento */
+body {
+    background-color: #232323; /* Color de fondo del cuerpo */
+    overflow-x: hidden; /* Oculta cualquier desbordamiento horizontal */
+}
+
+/* Estilo para la navegación */
+nav {
+    margin-top: 10px; /* Margen superior */
+    display: flex; /* Utiliza flexbox para la disposición */
+    justify-content: center; /* Centra los elementos en la navegación */
+    gap: 15px; /* Espacio entre los enlaces de navegación */
+}
+
+/* Estilo para el contenido del encabezado */
+.contenido {
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para los enlaces en la navegación */
+nav a {
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: darkslateblue; /* Color del texto de los enlaces */
+}
+
+/* Estilo para el encabezado */
+.header {
+    display: flex; /* Utiliza flexbox para la disposición */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    position: relative; /* Posición relativa para el contenido absoluto */
+    padding: 0; /* Elimina el padding */
+    margin: 0; /* Elimina el margen */
+    width: 100vw; /* Ancho total de la ventana */
+    box-sizing: border-box; /* Incluye padding y border en el cálculo del ancho y alto */
+    background-image: url(imagen-fondo-header.png); /* Imagen de fondo del encabezado */
+    height: 150px; /* Altura del encabezado */
+    background-position: center; /* Centra la imagen de fondo */
+    background-size: cover; /* Cubre todo el área del encabezado con la imagen */
+}
+
+/* Estilo para los encabezados de nivel 2 */
+h2 {
+    color: rgb(255, 255, 255); /* Color del texto de los encabezados */
+}
+
+/* Estilos generales para la sección "Sobre mí" */
+.sobre-mi {
+    width: 100%; /* Ancho total */
+    max-width: 600px; /* Ancho máximo */
+    margin: 20px auto; /* Margen vertical y centrado horizontalmente */
+    text-align: center; /* Centra el texto */
+    font-family: Arial, sans-serif; /* Fuente para esta sección */
+}
+
+/* Estilos para la tarjeta de biografía */
+.tarjeta {
+    background-color: #f5f5f5; /* Fondo suave */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Padding interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilos para los iconos de redes sociales */
+.redes-sociales {
+    display: flex; /* Utiliza flexbox para la disposición */
+    justify-content: center; /* Centra los iconos */
+    gap: 15px; /* Espacio entre los iconos */
+}
+
+/* Estilo para los iconos de redes sociales */
+.icono img {
+    width: 40px; /* Tamaño de los iconos */
+    height: 40px; /* Tamaño de los iconos */
+    transition: transform 0.3s, filter 0.3s; /* Animación para el efecto hover */
+}
+
+/* Efecto hover en los iconos */
+.icono:hover img {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el ratón */
+    filter: brightness(1.2 ); /* Cambia el brillo al pasar el ratón */
+}
+
+/* Estilo para la galería de proyectos */
+.Galeria-de-proyectos {
+    text-align: center; /* Centra el texto en la galería */
+}
+
+/* Estilo para cada proyecto */
+.project {
+    background-color: #fff; /* Fondo blanco para los proyectos */
+    border: 1px solid #ddd; /* Borde gris claro */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 15px; /* Padding interno */
+    width: 200px; /* Ancho fijo para los proyectos */
+    text-align: center; /* Centra el texto dentro del proyecto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.2s; /* Transición suave para el efecto hover */
+}
+
+/* Contenedor de la galería */
+.contenedor-galeria {
+    display: flex; /* Utiliza flexbox para la disposición */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente si es necesario */
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+}
+
+/* Estilo para la galería */
+.gallery {
+    display: flex; /* Utiliza flexbox para la disposición */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+    gap: 20px; /* Espacio entre los proyectos */
+    justify-content: center; /* Centra los proyectos */
+    padding: 20px; /* Padding alrededor de la galería */
+    max-width: 800px; /* Ancho máximo de la galería */
+}
+
+/* Efecto hover en los proyectos */
+.project:hover {
+    transform: scale(1.05); /* Aumenta el tamaño del proyecto al pasar el ratón */
+}
+
+/* Estilo para las imágenes de los proyectos */
+.project img {
+    width: 100%; /* Ancho completo del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 5px; /* Bordes redondeados para las imágenes */
+}
+
+/* Estilo para los títulos de los proyectos */
+.project h2 {
+    font-size: 18px; /* Tamaño de fuente para el título */
+    color: #333; /* Color del texto */
+    margin: 10px 0 5px; /* Margen alrededor del título */
+}
+
+/* Estilo para las descripciones de los proyectos */
+.project p {
+    font-size: 14px; /* Tamaño de fuente para la descripción */
+    color: #666; /* Color del texto */
+}
+
+/* Estilos para la sección de habilidades */
+.habilidades {
+    max-width: 800px; /* Ancho máximo de la sección */
+    margin: 20px auto; /* Margen vertical y centrado horizontalmente */
+    padding: 20px; /* Padding interno */
+    background-color: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilo para el título de habilidades */
+.habilidades h2 {
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Margen inferior */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para cada habilidad */
+.habilidad {
+    margin-bottom: 15px; /* Margen inferior */
+}
+
+/* Estilo para el título de cada habilidad */
+.habilidad h3 {
+    margin-bottom: 5px; /* Margen inferior */
+    color: #333; /* Color del texto */
+}
+
+/* Estilo para la barra de progreso */
+.barra {
+    background-color: #e0e0e0; /* Fondo gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta el contenido que se desborda */
+}
+
+/* Estilo para el progreso de la habilidad */
+.progreso {
+    height: 20px; /* Altura de la barra de progreso */
+    background-color: #2a3f53; /* Color de la barra de progreso */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: width 0.3s ease; /* Transición suave para el cambio de ancho */
+}
+
+/* Estilos para el formulario de contacto */
+.form {
+    display: flex; /* Utiliza flexbox para la disposición */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    align-self: center; /* Centra el formulario en su contenedor */
+    font-family: inherit; /* Hereda la fuente del documento */
+    gap: 10px; /* Espacio entre los campos del formulario */
+    padding-inline: 2em; /* Padding horizontal */
+    padding-bottom: 0.4em; /* Padding inferior */
+    background-color: #2c2c2c; /* Color de fondo del formulario */
+    border-radius: 20px; /* Bordes redondeados */
+    width: 1200px; /* Establece el ancho del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+}
+
+/* Estilo para el encabezado del formulario */
+.form-heading {
+    text-align: center; /* Centra el texto */
+    margin: 2em; /* Margen alrededor del encabezado */
+    color: #ffffff; /* Color del texto */
+    font-size: 1.2em; /* Tamaño de fuente */
+    background-color: transparent; /* Fondo transparente */
+    align-self: center; /* Centra el encabezado en su contenedor */
+}
+
+/* Estilo para cada campo del formulario */
+.form-field {
+    display: flex; /* Utiliza flexbox para la disposición */
+    align-items: center; /* Alinea los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    gap: 0.5em; /* Espacio entre los elementos */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 0.6em; /* Padding interno */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    color: white; /* Color del texto */
+    background-color: #000000; /* Color de fondo */
+    box-shadow: inset 2px 5px 10px rgb(30, 30, 30); /* Sombra interna */
+    
+}
+
+/* Estilo para los campos de entrada */
+.input-field {
+    background: none; /* Sin fondo */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    width: 100%; /* Ancho completo */
+    color: #ffffff; /* Color del texto */
+    padding-inline: 1em; /* Padding horizontal */
+}
+
+/* Estilo para el botón de enviar */
+.sendMessage-btn {
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    margin-bottom: 3em; /* Margen inferior */
+    padding: 1em; /* Padding interno */
+    border-radius: 10px; /* Bordes redondeados */
+    border: none; /* Sin borde */
+    outline: none; /* Sin contorno */
+    background-color: transparent; /* Fondo transparente */
+    color: #ffffff; /* Color del texto */
+    font-weight: bold; /* Negrita */
+    outline: 1px solid #ffffff; /* Borde blanco */
+    transition: all ease-in-out 0.3s; /* Transición suave para el hover */
+    width: 1200px; /* Establece el ancho del formulario */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+
+}
+
+/* Efecto hover en el botón de enviar */
+.sendMessage-btn:hover {
+    background-color: #ffffff; /* Fondo blanco al pasar el ratón */
+    color: #000000; /* Color del texto negro al pasar el ratón */
+    box-shadow: inset 2px 5px 10px rgb(0, 0, 0); /* Sombra interna al pasar el ratón */
+}
+
+/* Estilo para la tarjeta del formulario */
+.form-card1 {
+    background-image: linear-gradient(163deg, #ffffff 0%, #ffffff 100%); /* Gradiente de fondo */
+    border-radius: 22px; /* Bordes redondeados */
+    transition: all 0.3s; /* Transición suave para el hover */
+    width: 1200px;
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+
+}
+
+/* Efecto hover en la tarjeta del formulario */
+.form-card1:hover {
+    box-shadow: 0px 0px 30px 1px rgba(255, 255, 255, 0.3); /* Sombra al pasar el ratón */
+}
+
+/* Estilo para el contenedor del formulario */
+.form-card2 {
+    border-radius: 0; /* Sin bordes redondeados */
+    transition: all 0.2s; /* Transición suave para el hover */
+}
+
+/* Efecto hover en el contenedor del formulario */
+.form-card2:hover {
+    transform: scale(0.98); /* Reduce el tamaño al pasar el ratón */
+    border-radius: 20px; /* Bordes redondeados al pasar el ratón */
+}
+
+.cookie-checkbox {
+    display: none;
+}
+
+.cookie-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    border-radius: 8px;
+    transition: opacity 0.5s ease;
+}
+
+.cookie-checkbox:checked + .cookie-banner {
+    display: none;
+}
+
+.cookie-banner p {
+    margin: 0 0 15px;
+}
+
+.accept-btn {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.accept-btn:hover {
+    background-color: #45a049;
+}

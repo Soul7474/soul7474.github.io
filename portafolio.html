@@ -1,0 +1,160 @@
+<!DOCTYPE html> <!-- Indica que este documento es un archivo HTML5 -->
+<html lang="en"> <!-- Define el idioma del documento como inglés -->
+<head>
+    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres a UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsiva en dispositivos móviles -->
+    <title>Document</title> <!-- Título de la página que aparece en la pestaña del navegador -->
+    <link rel="stylesheet" href="portafolio.css"> <!-- Vincula el archivo CSS para aplicar estilos -->
+</head>
+<body>
+
+    <!-- Checkbox para la aceptación de cookies, oculto por CSS -->
+    <input type="checkbox" id="cookie-checkbox" class="cookie-checkbox">
+
+    <!-- Banner de cookies que se muestra al usuario -->
+    <div class="cookie-banner">
+        <p>Este sitio utiliza cookies para mejorar la experiencia del usuario. Al continuar navegando, aceptas el uso de cookies.</p>
+        <label for="cookie-checkbox" class="accept-btn">Aceptar</label> <!-- Botón para aceptar cookies -->
+    </div>
+
+    <header> <!-- Encabezado de la página -->
+        <div class="header"> <!-- Contenedor principal del encabezado -->
+            <img src="Logo.png" alt="logo" class="logo"> <!-- Imagen del logo -->
+            <div class="contenido"> <!-- Contenedor para el contenido del encabezado -->
+                 <h1>SAÚL MARTIN SANCHEZ</h1> <!-- Nombre del propietario del portafolio -->
+                 <nav> <!-- Navegación principal -->
+                    <a href="#sobre-mi">Sobre mí</a> <!-- Enlace a la sección "Sobre mí" -->
+                    <a href="#Galeria-proyectos">Galería de Proyectos</a> <!-- Enlace a la sección de proyectos -->
+                    <a href="#Habilidades y conocimientos">Habilidades y Conocimientos</a> <!-- Enlace a la sección de habilidades -->
+                    <a href="#Formulario de Contacto">Formulario de Contacto</a> <!-- Enlace al formulario de contacto -->
+                 </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="sobre-mi" id="sobre-mi"> <!-- Sección "Sobre mí" -->
+        <h2>Sobre Mí</h2> <!-- Título de la sección -->
+        <br>
+        <div class="tarjeta"> <!-- Tarjeta que contiene información personal -->
+            <p> Hola, soy <u> Saúl Martin Sanchez</u>. He estudiado la primaria en el Marti Sorolla, la secundaria en el Marti Sorolla 2 y actualmente estoy formándome en el profesional sorolla. Tengo el certificado de manipulador de alimentos, el de alergias e intolerancias alimentarias y ahora mismo me encuentro preparándome para adquirir el certificado <b>eJPTv2.</b> </p>
+        </div>
+        <div class="redes-sociales"> <!-- Sección de enlaces a redes sociales -->
+            <a href="#" class="icono" target="_blank" title="Instagram"><img src="Instagram-logo.png" alt="Instagram"></a> <!-- Icono de Instagram -->
+            <a href="#" class="icono" target="_blank" title="X"><img src="X-logo.png" alt="Twitter"></a> <!-- Icono de Twitter -->
+            <a href="#" class="icono" target="_blank" title="LinkedIn"><img src="Linkedin-logo.png" alt="LinkedIn"></a> <!-- Icono de LinkedIn -->
+        </div>
+    </div>
+
+    <br>
+
+    <div class="contenedor-galeria" id="Galeria-proyectos"> <!-- Sección de galería de proyectos -->
+        <div class="Galeria-de-proyectos">
+            <h2>Galería de Proyectos</h2> <!-- Título de la sección -->
+            <div class="gallery"> <!-- Contenedor para los proyectos -->
+                <div class="project"> <!-- Tarjeta de un proyecto -->
+                    <img src="Blackbox-icono.png" alt="Proyecto 1"> <!-- Imagen del proyecto -->
+                    <h2>Blackbox</h2> <!-- Título del proyecto -->
+                    <p>Introducción de blackbox y Creación de agentes.</p> <!-- Descripción del proyecto -->
+                </div>
+                <div class="project"> <!-- Otra tarjeta de proyecto -->
+                    <img src="truenas-icono.png" alt="Proyecto 2"> <!-- Imagen del proyecto -->
+                    <h2>Truenas</h2> <!-- Título del proyecto -->
+                    <p>Como crear y configurar un servidor truenas.</p> <!-- Descripción del proyecto -->
+                </div>
+                <div class="project"> <!-- Otra tarjeta de proyecto -->
+                    <img src="DNS-icono.png" alt="Proyecto 3"> <!-- Imagen del proyecto -->
+                    <h2>DNS</h2> <!-- Título del proyecto -->
+                    <p>Creación del sistema DNS.</p> <!-- Descripción del proyecto -->
+                </div>
+                <div class="project"> <!-- Otra tarjeta de proyecto -->
+                    <img src="DHCP-icono.png" alt="Proyecto 4"> <!-- Imagen del proyecto -->
+                    <h2>DCHP</h2> <!-- Título del proyecto -->
+                    <p>Explicación del DCHP y implementacion en los equipos.</p> <!-- Descripción del proyecto -->
+                </div>
+                <div class="project"> <!-- Otra tarjeta de proyecto -->
+                    <img src="marketing-icono.png" alt="Proyecto 5"> <!-- Imagen del proyecto -->
+                    <h2>Marketing</h2> <!-- Título del proyecto -->
+                    <p>Aprendizaje de marketing en EIE segun el nivel del producto.</p> <!-- Descripción del proyecto -->
+                </div>
+                <div class="project"> <!-- Otra tarjeta de proyecto -->
+                    <img src="link-icono.png" alt="Proyecto 6"> <!-- Imagen del proyecto -->
+                    <h2>Enlaces</h2> <!-- Título del proyecto -->
+                    <p>Creación de enlaces en el proyecto y enlazar html y css.</p> <!-- Descripción del proyecto -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="habilidades" id="Habilidades y conocimientos"> <!-- Sección de habilidades y conocimientos -->
+        <h2>Habilidades y Conocimientos</h2> <!-- Título de la sección -->
+        
+        <div class="habilidad"> <!-- Tarjeta para una habilidad -->
+            <h3>HTML</h3> <!-- Título de la habilidad -->
+            <div class="barra"> <!-- Contenedor para la barra de progreso -->
+                <div class="progreso" style="width: 50%;"></div> <!-- Barra de progreso que indica el nivel de habilidad -->
+            </div>
+        </div>
+        
+        <div class="habilidad"> <!-- Tarjeta para otra habilidad -->
+            <h3>CSS</h3> <!-- Título de la habilidad -->
+            <div class="barra"> <!-- Contenedor para la barra de progreso -->
+                <div class="progreso" style="width: 40%;"></div> <!-- Barra de progreso que indica el nivel de habilidad -->
+            </div>
+        </div>
+    </div>    
+
+    <br>
+
+    <div class="form-card1" id="Formulario de Contacto"> <!-- Sección del formulario de contacto -->
+        <div class="form-card2"> <!-- Contenedor para el formulario -->
+          <form class="form"> <!-- Inicio del formulario -->
+            <p class="form-heading">¿Quieres contratarme? ¡Hablemos!</p> <!-- Encabezado del formulario -->
+      
+            <div class="form-field"> <!-- Campo para el nombre -->
+              <input required="" placeholder="Nombre" class="input-field" type="text"/> <!-- Campo de entrada para el nombre -->
+            </div>
+      
+            <div class="form-field"> <!-- Campo para el email -->
+              <input
+                required=""
+                placeholder="Email"
+                class="input-field"
+                type="email"
+              /> <!-- Campo de entrada para el email -->
+            </div>
+      
+            <div class="form-field"> <!-- Campo para el asunto -->
+              <input
+                required=""
+                placeholder="Asunto"
+                class="input-field"
+                type="text"
+              /> <!-- Campo de entrada para el asunto -->
+            </div>
+      
+            <div class="form-field"> <!-- Campo para el mensaje -->
+              <textarea
+                required=""
+                placeholder="Mensaje"
+                cols="30"
+                rows="3"
+                class="input-field"
+              ></textarea> <!-- Área de texto para el mensaje -->
+            </div>
+      
+            <div class="form-field"> <!-- Contenedor para los botones -->
+                <button type="submit" class="sendMessage-btn">¡Enviame un mensaje!</button> <!-- Botón para enviar el formulario -->
+            </div>
+
+        </form>
+        </div>
+      </div>
+      
+      <footer>
+        <p style="text-align: center; color: #ffffff;">© 2024 Saúl Martin Sanchez</p>
+    </footer>
+
+</body>
+</html> <!-- Fin del documento HTML -->
